@@ -19,13 +19,13 @@
   "main": "./index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/devicefarmer/adbkit-logcat.git"
+    "url": "git+https://github.com/DeviceFarmer/adbkit-logcat.git"
   },
   "scripts": {
     "compile": "tsc -p .",
     "format": "eslint ./lib --fix --ext .ts",
     "lint": "eslint ./ --ext .ts",
-    "prepublish": "npm run compile && npm run test",
+    "prepublishOnly": "npm run compile && npm run test",
     "test": "mocha --recursive"
   },
   "dependencies": {},
