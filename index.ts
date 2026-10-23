@@ -1,3 +1,3 @@
-import Logcat from './lib/logcat';
+import Logcat from './lib/logcat'
 
 export = Logcat
