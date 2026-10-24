@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.0.0 (2026-10-24)
+
+* chore!: move to ESLint 10, TypeScript 6 and Node 22 by @koral-- in https://github.com/DeviceFarmer/adbkit-logcat/pull/325
+* chore(deps): keep @types/node on the supported Node.js major by @koral-- in https://github.com/DeviceFarmer/adbkit-logcat/pull/326
+
+**Full Changelog**: https://github.com/DeviceFarmer/adbkit-logcat/compare/v2.1.3...v3.0.0
+
 ## 2.1.3 (2023-03-30)
 
 * Bump eslint from 7.32.0 to 8.24.0 by @dependabot in https://github.com/DeviceFarmer/adbkit-logcat/pull/208
