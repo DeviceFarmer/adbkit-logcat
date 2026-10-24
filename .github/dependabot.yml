@@ -29,3 +29,7 @@ updates:
   - dependency-name: eslint-config-prettier
     versions:
     - 7.2.0
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: weekly
