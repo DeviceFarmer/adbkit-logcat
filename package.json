@@ -1,6 +1,6 @@
 {
   "name": "@devicefarmer/adbkit-logcat",
-  "version": "2.1.3",
+  "version": "3.0.0",
   "description": "A Node.js interface for working with Android's logcat output.",
   "keywords": [
     "adb",
