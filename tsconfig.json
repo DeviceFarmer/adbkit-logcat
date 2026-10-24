@@ -1,14 +1,12 @@
 {
   "compilerOptions": {
-    "alwaysStrict": true,
     "declaration": true,
     "esModuleInterop": true,
-    "lib": ["es2017"],
-    "module": "commonjs",
-    "target": "es5"
+    "lib": ["es2023"],
+    "module": "node20",
+    "strict": false,
+    "target": "es2023",
+    "types": ["node"]
   },
-  "exclude": [
-    "lib/**/*.d.ts",
-    "node_modules"
-  ]
+  "include": ["index.ts", "lib/**/*.ts"]
 }

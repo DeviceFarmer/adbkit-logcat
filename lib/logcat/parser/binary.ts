@@ -33,7 +33,6 @@ class Binary extends EventEmitter {
       cursor += 4
       const nsec = this.buffer.readInt32LE(cursor)
       entry.setDate(new Date(sec * 1000 + nsec / 1000000))
-      cursor += 4
       // Make sure that we don't choke if new fields are added
       cursor = headerSize
       const data = this.buffer.slice(cursor, cursor + length)

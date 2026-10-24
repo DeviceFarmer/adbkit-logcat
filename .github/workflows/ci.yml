@@ -23,13 +23,11 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node }}
+          cache: npm
 
-      # No lockfile is committed, so npm ci has nothing to install from.
       - name: Install
-        run: npm install --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
 
-      # Before Compile, because the generated index.d.ts at the root is not
-      # ignored by ESLint.
       - name: Lint
         run: npm run lint
 

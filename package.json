@@ -14,7 +14,7 @@
   "author": {
     "name": "The OpenSTF Project",
     "email": "contact@devicefarmer.com",
-    "url": "https://devicefarmer,com"
+    "url": "https://devicefarmer.com"
   },
   "main": "./index",
   "repository": {
@@ -23,29 +23,27 @@
   },
   "scripts": {
     "compile": "tsc -p .",
-    "format": "eslint ./lib --fix --ext .ts",
-    "lint": "eslint ./ --ext .ts",
+    "format": "prettier --write . && eslint . --fix",
+    "lint": "eslint . && prettier --check .",
     "prepublishOnly": "npm run compile && npm run test",
-    "test": "mocha --recursive"
+    "test": "mocha"
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^18.15.11",
-    "@typescript-eslint/eslint-plugin": "^5.54.0",
-    "@typescript-eslint/parser": "^5.57.0",
-    "chai": "^4.3.3",
-    "eslint": "^8.24.0",
-    "eslint-config-prettier": "^8.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-progress": "0.0.1",
-    "mocha": "^10.2.0",
-    "prettier": "^2.1.2",
-    "sinon": "^15.0.1",
-    "sinon-chai": "^3.7.0",
-    "typescript": "^5.0.2"
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.20.5",
+    "chai": "^6.3.0",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "mocha": "^12.0.3",
+    "prettier": "^3.9.10",
+    "sinon": "^22.1.0",
+    "sinon-chai": "^4.0.1",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.0"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 22"
   },
   "files": [
     "/lib/**/*.js",

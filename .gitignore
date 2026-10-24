@@ -1,7 +1,6 @@
 /*.tgz
 /node_modules/
 /temp/
-package-lock.json
 /lib/**/*.d.ts
 /lib/**/*.js
 /index.js

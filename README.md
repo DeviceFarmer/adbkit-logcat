@@ -4,14 +4,14 @@
 
 ## Requirements
 
-* [Node.js](http://nodejs.org/) 4.x or newer. Older versions are not supported.
+* [Node.js](https://nodejs.org/) 22 or newer. Older versions are not supported.
 
 ## Getting started
 
 Install via NPM:
 
 ```bash
-npm install --save adbkit-logcat
+npm install --save @devicefarmer/adbkit-logcat
 ```
 
 ### Examples
