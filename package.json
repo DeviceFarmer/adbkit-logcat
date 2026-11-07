@@ -51,5 +51,9 @@
     "/index.js",
     "/index.d.ts"
   ],
-  "types": "./index.d.ts"
+  "types": "./index.d.ts",
+  "overrides": {
+    "glob": "^14.0.2",
+    "minimatch": "^11.0.1"
+  }
 }
